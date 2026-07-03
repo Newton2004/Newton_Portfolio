@@ -9,20 +9,20 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
     model_config = ConfigDict(env_file=".env", extra="ignore")
-    
+
     # App
     app_name: str = "Newton Raja Portfolio API"
     app_version: str = "1.0.0"
-    environment: str = "development"
+    environment: str = "production"
 
     # Database
-    database_url: str = "sqlite:///./portfolio.db"  # SQLite fallback for local dev
+    database_url: str = "postgresql://newton_portfolio_user:vSkt15kQsRII02wUoYZZBVNcXVXqSwYl@dpg-d93u0457vvec73dp26u0-a.virginia-postgres.render.com/newton_portfolio"  # SQLite fallback for local dev
 
     # Security
-    secret_key: str = "change-me-in-production"
+    secret_key: str = "NewtonPortfolio@2026#8LmPq9!RtX5"
 
     # CORS
-    frontend_origins: str = "http://localhost:3000"
+    frontend_origins: str = "https://newton-portfolio-knr.vercel.app"
 
     @property
     def allowed_origins(self) -> list[str]:
