@@ -16,8 +16,8 @@ app = FastAPI(
     title=settings.app_name,
     version=settings.app_version,
     description="REST API backend for Newton Raja's personal portfolio website.",
-    docs_url="/api/docs",
-    redoc_url="/api/redoc",
+    docs_url="/docs",
+    redoc_url="/redoc",
 )
 
 
