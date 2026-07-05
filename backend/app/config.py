@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     smtp_host: str = "smtp.gmail.com"
     smtp_port: int = 587
     smtp_user: str | None = "knewtonraja@gmail.com"
-    smtp_password: str | None = os.getenv("SMTP_PASSWORD")
+    smtp_password: str | None = None
     smtp_use_tls: bool = True
     notify_to_email: str = "knewtonraja@gmail.com"
     notify_from_email: str | None = "knewtonraja@gmail.com"
