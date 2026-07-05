@@ -10,7 +10,7 @@ from ..database import get_db
 from ..models import ContactMessage
 from ..schemas import ContactCreate, ContactResponse, SuccessResponse
 
-router = APIRouter(prefix="/api/contact", tags=["contact"])
+router = APIRouter(prefix="/contact", tags=["contact"])
 
 
 @router.post(
