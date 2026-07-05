@@ -8,8 +8,7 @@ import SectionHeader from '../ui/SectionHeader'
 import { useTheme } from '@/context/ThemeContext'
 import { personalInfo } from '../../data/portfolioData'
 
-const API_URL = import.meta.env.VITE_API_URL
-//  || 'https://newton-portfolio-api.onrender.com/'
+const API_URL = import.meta.env.VITE_API_URL || 'https://newton-portfolio-api.onrender.com/'
 
 const initialForm = { name: '', email: '', subject: '', message: '' }
 

@@ -24,6 +24,15 @@ class Settings(BaseSettings):
     # CORS
     frontend_origins: str = "https://newton-portfolio-knr.vercel.app"
 
+    # Email Notifications
+    smtp_host: str = "smtp.gmail.com"
+    smtp_port: int = 587
+    smtp_user: str | None = "knewtonraja@gmail.com"
+    smtp_password: str | None = os.getenv("SMTP_PASSWORD")
+    smtp_use_tls: bool = True
+    notify_to_email: str = "knewtonraja@gmail.com"
+    notify_from_email: str | None = "knewtonraja@gmail.com"
+
     @property
     def allowed_origins(self) -> list[str]:
         return [o.strip() for o in self.frontend_origins.split(",")]
@@ -31,6 +40,10 @@ class Settings(BaseSettings):
     @property
     def is_production(self) -> bool:
         return self.environment.lower() == "production"
+
+    @property
+    def email_notification_enabled(self) -> bool:
+        return bool(self.smtp_host and self.smtp_user and self.smtp_password and self.notify_to_email)
 
 
 @lru_cache()
