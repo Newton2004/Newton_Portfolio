@@ -46,7 +46,7 @@ export default function Contact() {
 
     setLoading(true)
     try {
-      await axios.post(`${API_URL}/contact`, {
+      await axios.post(`${API_URL}/api/contact`, {
         name: form.name.trim(),
         email: form.email.trim(),
         subject: form.subject.trim(),
