@@ -8,7 +8,7 @@ import SectionHeader from '../ui/SectionHeader'
 import { useTheme } from '@/context/ThemeContext'
 import { personalInfo } from '../../data/portfolioData'
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://newton-portfolio-api.onrender.com/'
+const API_URL = import.meta.env.VITE_API_URL || 'https://newton-portfolio-api.onrender.com'
 
 const initialForm = { name: '', email: '', subject: '', message: '' }
 
@@ -46,7 +46,7 @@ export default function Contact() {
 
     setLoading(true)
     try {
-      await axios.post(`${API_URL}/api/contact`, {
+      await axios.post(`${API_URL}/contact`, {
         name: form.name.trim(),
         email: form.email.trim(),
         subject: form.subject.trim(),
