@@ -153,7 +153,7 @@ export const projectsData = [
     github: 'https://github.com/Newton2004/Newton_Portfolio ',
     demo: 'https://newtonraja.dev',
     gradient: 'from-[#00d4ff] to-[#8b5cf6]',
-    image: "/src/assets/projects/imgPortfolio.png",
+    image: "/projects/imgPortfolio.png",
   },
   {
     id: 2,
@@ -167,7 +167,7 @@ export const projectsData = [
     github: null,
     demo: null,
     gradient: 'from-[#ff6b6b] to-[#ee5a6f]',
-    image: "/src/assets/projects/imgDefectManagement.png",
+    image: "/projects/imgDefectManagement.png",
   },
   // {
   //   id: 3,
@@ -241,7 +241,7 @@ export const projectsData = [
     github: 'https://github.com/Newton2004/automation-framework',
     demo: null,
     gradient: 'from-[#8b5cf6] to-[#ec4899]',
-    image: "/src/assets/projects/AiAutomation.jpg",
+    image: "/projects/AiAutomation.jpg",
   },
   {
     id: 8,
@@ -269,7 +269,7 @@ export const projectsData = [
     github: null,
     demo: null,
     gradient: 'from-[#06b6d4] to-[#0891b2]',
-    image: "/src/assets/projects/CreaterCo.jpg",
+    image: "/projects/CreaterCo.jpg",
   },
   {
     id: 10,
@@ -311,7 +311,7 @@ export const projectsData = [
     github: null,
     demo: null,
     gradient: 'from-[#34d399] to-[#059669]',
-    image: "/src/assets/projects/personalBudgetTracker.png",
+    image: "/projects/personalBudgetTracker.png",
   },
 ]
 
