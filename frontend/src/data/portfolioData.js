@@ -151,7 +151,7 @@ export const projectsData = [
     status: 'Live',
     featured: true,
     github: 'https://github.com/Newton2004/Newton_Portfolio ',
-    demo: 'https://newtonraja.dev',
+    demo: 'https://newton-portfolio-knr.vercel.app/',
     gradient: 'from-[#00d4ff] to-[#8b5cf6]',
     image: "/projects/imgPortfolio.png",
   },
